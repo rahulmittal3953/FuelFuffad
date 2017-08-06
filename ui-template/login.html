@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Fuel Fuffad</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='assets/css/italic-font.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/montserrat-font.css' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"/>
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <link rel="stylesheet" href="assets/css/octicons.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+	.vertical-divider {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 43%;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 50%;
+  line-height: 0;
+  text-align:center;
+  /*text-transform: uppercase;*/
+  transform: translateX(-50%);
+}
+
+.vertical-divider:before, 
+.vertical-divider:after {
+  position: absolute;
+  left: 43%;
+  content: '';
+  z-index: 9;
+  border-left: 1px solid rgba(34,36,38,.15);
+  border-right: 1px solid rgba(255,255,255,.1);
+  width: 0;
+  height: calc(100% - 1rem);
+}
+
+.row-divided > .vertical-divider {
+  height: calc(50% - 1rem);    
+}
+
+.vertical-divider:before {
+  top: -100%;
+}
+
+.vertical-divider:after {
+  top: auto;
+  bottom: 0;
+}
+
+.row-divided {
+  position:relative;
+}
+
+.row-divided > [class^="col-"],
+.row-divided > [class*=" col-"] {
+  padding-left: 30px;  /* gutter width (give a little extra room) 2x default */
+  padding-right: 30px; /* gutter width (give a little extra room) 2x default */
+}
+
+
+
+
+/* just to set different column heights - not needed to function */          
+.column-one {
+  /*height: 300px; */
+  background-color: #EBFFF9;
+}
+.column-two {
+  /*height: 400px;*/
+  background-color: #F7F3FF;
+}
+
+.section .section-inner {
+    background: transparent;
+    padding: 30px;
+}
+.testimonials .item {
+    margin-bottom: 0px;
+}
+	</style>
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="James Lee" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Fuel Fuffad</h1>
+                <h2 class="desc">Web App Developer</h2>   
+                <ul class="social list-inline">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>                   
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github-alt"></i></a></li>                  
+                    <li class="last-item"><a href="#"><i class="fa fa-hacker-news"></i></a></li>                 
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+		
+		<div class="row">
+			<div class="primary col-md-12 col-sm-12 col-xs-12">
+				<div class="col-xs-5 column-one">
+				<aside class="testimonials aside section">
+                    <div class="section-inner" style="background-color:#EBFFF9;">
+                        <h2 class="heading">Login</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p><i class="fa fa-quote-left"></i>Welcome to Fuel Fuffad, her ehre rhkha h</blockquote>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->
+						
+						<div class="content" style="padding-right: 10%;">
+						<form id="loginform" class="form-horizontal" role="form">
+							<div class="item">
+								<h5 class="title">User Name</span></h5>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+									<input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+								</div>
+							</div><!--//item-->
+							<div class="item">
+								<h5 class="title">Password</h5>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+									<input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+								</div>
+							</div><!--//item-->
+							<div class="item">
+							<span class="button-checkbox">
+								<!--<button type="button" class="btn" data-color="info">Remember Me</button>
+								<input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">-->
+								<label class="btn" data-color="info" style="padding-left:0%;">
+									<input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                </label>
+								<a href="" class="btn btn-link pull-right">Forgot Password?</a>
+							</span>
+							</div>
+							<div class="item">
+								<button class="btn btn-cta-primary pull-right"><i class="fa fa-paper-plane"></i> Log In</button>
+							</div>
+							</form>
+						</div>
+						<div class="content credits " style="    margin-top: 15.5%">
+							<hr class="divider">
+							<button class="btn btn-cta-facebook btn-follow"><i class="fa fa-facebook"></i> Login with Facebook</button>
+							<button class="btn btn-cta-gmail btn-follow"><i class="fa fa-google"></i> Login with Gmail</button>
+						</div>
+						
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+				
+			</div>
+			<div class="vertical-divider">Log In or Sing Up</div>
+			<div class="col-xs-7 column-two">
+				<aside class="testimonials aside section">
+                    <div class="section-inner" style="background-color:#F7F3FF;">
+                        
+							<div class="content" style="padding-left:10%;">
+							<h2 class="heading">Sing Up</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p><i class="fa fa-quote-left"></i>Welcome to Fuel Fuffad, her ehre rhkha jkhdjkah fhjdh jkh</blockquote>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->
+						<div>
+								<form id="loginform" class="form-horizontal" role="form">
+									<div class="item">
+										<h5 class="title">Name</span></h5>
+										<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+											<input id="login-username" type="text" class="form-control" name="username" value="" placeholder="name">
+										</div>
+									</div><!--//item-->
+								
+									<div class="item">
+										<h5 class="title">Email</span></h5>
+										<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+											<input id="login-username" type="text" class="form-control" name="username" value="" placeholder="email">
+										</div>
+									</div><!--//item-->
+									<div class="item">
+										<h5 class="title">Mobile</h5>
+										<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+											<input id="login-password" type="password" class="form-control" name="password" placeholder="Mobile">
+										</div>
+									</div><!--//item-->
+									<div class="item">
+										<h5 class="title">Password</h5>
+										<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+											<input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+										</div>
+									</div><!--//item-->
+									<div class="item" style="margin-top: 7%;">
+										<button class="btn btn-cta-secondary pull-right"><i class="fa fa-paper-plane"></i> Sing Up</button>
+									</div>
+									</form>
+							</div>
+						
+						</div>
+						
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+            
+				
+			</div>
+			
+			</div>
+		</div>
+	
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="" target="_blank">FuelFuffad</a> developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/js/es6-promise.min.js"></script>
+    <script type="text/javascript" src="assets/js/fetch.min.js"></script>
+    <!--<script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>-->
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="assets/js/mustache.min.js"></script>
+    <!--<script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>-->
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html> 
+
