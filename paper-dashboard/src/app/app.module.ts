@@ -20,6 +20,7 @@ import { NotificationsComponent }   from './notifications/notifications.componen
 import { UpgradeComponent }   from './upgrade/upgrade.component';
 
 import { ProductsComponent }   from './products/products.component';
+import { AddproductComponent } from './products/addproduct/addproduct.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ProductsComponent }   from './products/products.component';
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
-	ProductsComponent
+	ProductsComponent,
+	AddproductComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ import { NotificationsComponent }   from './notifications/notifications.componen
 import { UpgradeComponent }   from './upgrade/upgrade.component';
 
 import { ProductsComponent }   from './products/products.component';
+import { AddproductComponent } from './products/addproduct/addproduct.component';
 
 export const AppRoutes: Routes = [
     {
@@ -52,6 +53,10 @@ export const AppRoutes: Routes = [
     {
         path: 'products',
         component: ProductsComponent
+    },
+    {
+        path: 'addProduct',
+        component: AddproductComponent
     }
 	
 ]

@@ -9,6 +9,21 @@ export interface RouteInfo {
     class: string;
 }
 
+export const FULLROUTES: RouteInfo[] = [
+    { path: 'dashboard', title: 'Dashboard',  icon: 'ti-panel', class: '' },
+    { path: 'user', title: 'User Profile',  icon:'ti-user', class: '' },
+    { path: 'table', title: 'Table List',  icon:'ti-view-list-alt', class: '' },
+    { path: 'typography', title: 'Typography',  icon:'ti-text', class: '' },
+    { path: 'icons', title: 'Icons',  icon:'ti-pencil-alt2', class: '' },
+    { path: 'maps', title: 'Maps',  icon:'ti-map', class: '' },
+    { path: 'notifications', title: 'Notifications',  icon:'ti-bell', class: '' },
+	{ path: 'products', title: 'Products',  icon: 'P', class: '' },
+    { path: 'categories', title: 'Categories',  icon:'C', class: '' },
+    { path: 'reviews', title: 'Reviews',  icon:'R', class: '' },
+    { path: 'tags', title: 'Tags',  icon:'T', class: '' },
+];
+
+
 export const ROUTES: RouteInfo[] = [
     { path: 'dashboard', title: 'Dashboard',  icon: 'ti-panel', class: '' },
     { path: 'user', title: 'User Profile',  icon:'ti-user', class: '' },

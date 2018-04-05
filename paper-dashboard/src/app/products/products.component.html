@@ -1,6 +1,14 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
+            <div class="" style="margin-bottom: 20px">
+                <a class="btn btn-default btn-fill btn-wd" href="addProduct" >Add Product</a>
+            </div>
+       </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
             <div class="card">
                 <div class="header">
                     <h4 class="title">Products</h4>
@@ -15,6 +23,8 @@
                         <tbody>
                             <tr *ngFor="let row of tableData1.dataRows">
                                 <td *ngFor="let cell of row">{{cell}}</td>
+                                <td><i class="ti-pencil-alt"></i></td>
+                                <td><i class="ti-trash"></i></td>
                             </tr>
                         </tbody>
                     </table>
